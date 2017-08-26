@@ -387,4 +387,16 @@ Wire Wire Line
 Wire Wire Line
 	5150 2650 3400 2650
 Connection ~ 3400 3150
+Text Notes 7400 7500 0    60   ~ 0
+FTDI - USB to serial converter
+Text Notes 7100 7000 0    79   ~ 0
+Released under the Creative Commons\nAttribution-ShareAlike 4.0 International (CC BY-SA 4.0) \nhttps://creativecommons.org/licenses/by-sa/4.0/
+Text HLabel 6600 2400 1    60   Input ~ 0
+3V3
+Wire Wire Line
+	6600 2400 6600 2900
+Text HLabel 7100 2400 1    60   Input ~ 0
+3V3
+Wire Wire Line
+	7100 2400 7100 2900
 $EndSCHEMATC
