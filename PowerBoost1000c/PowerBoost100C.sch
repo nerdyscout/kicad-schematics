@@ -1,0 +1,618 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:PowerBoost100C-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TPS61090RSAR U4
+U 1 1 590C2AE1
+P 2750 4050
+F 0 "U4" H 2850 5100 60  0000 C CNN
+F 1 "TPS61090RSAR" H 3150 4000 60  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-16-1EP_4x4mm_Pitch0.65mm" H 2750 4050 60  0001 C CNN
+F 3 "www.ti.com/lit/ds/symlink/tps61090.pdf" H 2750 4050 60  0000 C CNN
+	1    2750 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 590C2CA6
+P 1900 4100
+F 0 "R8" H 2050 4150 50  0000 C CNN
+F 1 "340k" H 2100 4050 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 1830 4100 50  0001 C CNN
+F 3 "" H 1900 4100 50  0000 C CNN
+	1    1900 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 590C2D21
+P 1900 3600
+F 0 "R7" H 2050 3650 50  0000 C CNN
+F 1 "1.87M" H 2100 3550 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 1830 3600 50  0001 C CNN
+F 3 "" H 1900 3600 50  0000 C CNN
+	1    1900 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 3350 1900 3450
+Wire Wire Line
+	1900 3950 1900 3750
+Wire Wire Line
+	2550 3650 2200 3650
+Wire Wire Line
+	2200 3650 2200 3850
+Connection ~ 1900 3850
+Wire Wire Line
+	2550 3850 2450 3850
+Wire Wire Line
+	2450 3850 2450 4600
+Wire Wire Line
+	2450 3950 2550 3950
+Wire Wire Line
+	1900 4600 1900 4250
+Connection ~ 2450 3950
+Wire Wire Line
+	2550 3450 2450 3450
+Wire Wire Line
+	2450 3450 2450 2450
+Wire Wire Line
+	1100 2450 1100 3850
+Connection ~ 1900 3350
+Connection ~ 1100 3150
+$Comp
+L C C5
+U 1 1 590C2F22
+P 1100 4000
+F 0 "C5" H 1125 4100 50  0000 L CNN
+F 1 "10µ" H 1125 3900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 1138 3850 50  0001 C CNN
+F 3 "" H 1100 4000 50  0000 C CNN
+	1    1100 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C6
+U 1 1 590C2FAB
+P 1500 4000
+F 0 "C6" H 1525 4100 50  0000 L CNN
+F 1 "100n" H 1525 3900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 1538 3850 50  0001 C CNN
+F 3 "" H 1500 4000 50  0000 C CNN
+	1    1500 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 4150 1100 4600
+Wire Wire Line
+	1500 4600 1500 4150
+Wire Wire Line
+	1500 3850 1500 3350
+Connection ~ 1500 3350
+Connection ~ 1100 3350
+$Comp
+L R R10
+U 1 1 590C3145
+P 4000 3700
+F 0 "R10" H 4150 3750 50  0000 C CNN
+F 1 "200k" H 4150 3650 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 3930 3700 50  0001 C CNN
+F 3 "" H 4000 3700 50  0000 C CNN
+	1    4000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 590C31D0
+P 4000 3200
+F 0 "R9" H 4150 3250 50  0000 C CNN
+F 1 "1.87M" H 4200 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 3930 3200 50  0001 C CNN
+F 3 "" H 4000 3200 50  0000 C CNN
+	1    4000 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3950 4000 3950
+Wire Wire Line
+	4000 3850 4000 4600
+Connection ~ 4000 3950
+Wire Wire Line
+	4000 3550 4000 3350
+Wire Wire Line
+	3500 3150 3750 3150
+Wire Wire Line
+	3750 3150 3750 2900
+Wire Wire Line
+	4000 3050 4000 2900
+Connection ~ 4000 2900
+Wire Wire Line
+	3500 3450 4000 3450
+Connection ~ 4000 3450
+$Comp
+L R R11
+U 1 1 590C3605
+P 5200 3700
+F 0 "R11" H 5350 3750 50  0000 C CNN
+F 1 "1k" H 5350 3650 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 5130 3700 50  0001 C CNN
+F 3 "" H 5200 3700 50  0000 C CNN
+	1    5200 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2450 5200 3550
+Wire Wire Line
+	1100 3350 2550 3350
+Wire Wire Line
+	2200 3850 1900 3850
+$Comp
+L C C7
+U 1 1 590C416C
+P 4400 4250
+F 0 "C7" H 4425 4350 50  0000 L CNN
+F 1 "2.2µ" H 4425 4150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 4438 4100 50  0001 C CNN
+F 3 "" H 4400 4250 50  0000 C CNN
+	1    4400 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C8
+U 1 1 590C425C
+P 4800 4250
+F 0 "C8" H 4825 4350 50  0000 L CNN
+F 1 "100µ" H 4825 4150 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:TantalC_SizeC_EIA-6032_HandSoldering" H 4838 4100 50  0001 C CNN
+F 3 "" H 4800 4250 50  0000 C CNN
+	1    4800 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2900 4400 4100
+Connection ~ 4400 2900
+Wire Wire Line
+	4800 4600 4800 4400
+Wire Wire Line
+	4400 4400 4400 4600
+Wire Wire Line
+	3750 2900 5200 2900
+Connection ~ 5200 2900
+Wire Wire Line
+	8200 2650 8100 2650
+Wire Wire Line
+	8100 1850 8100 2750
+Wire Wire Line
+	8100 2750 8200 2750
+Wire Wire Line
+	8200 3750 8100 3750
+Wire Wire Line
+	8100 3750 8100 3450
+Wire Wire Line
+	7800 3450 8200 3450
+Wire Wire Line
+	8200 3550 8100 3550
+Connection ~ 8100 3550
+Wire Wire Line
+	8200 3650 8100 3650
+Connection ~ 8100 3650
+Wire Wire Line
+	9450 3850 9550 3850
+Wire Wire Line
+	9550 3850 9550 4600
+Wire Wire Line
+	9450 3950 9550 3950
+Connection ~ 9550 3950
+Wire Wire Line
+	9450 3250 10700 3250
+Wire Wire Line
+	9550 3250 9550 3450
+Wire Wire Line
+	9550 3450 9450 3450
+Wire Wire Line
+	9450 3350 9550 3350
+Connection ~ 9550 3350
+Wire Wire Line
+	9550 2750 9450 2750
+Wire Wire Line
+	9550 2650 9450 2650
+Connection ~ 9550 2650
+Connection ~ 9550 3250
+$Comp
+L C C10
+U 1 1 590C5BC0
+P 10300 4000
+F 0 "C10" H 10325 4100 50  0000 L CNN
+F 1 "10µ" H 10325 3900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 10338 3850 50  0001 C CNN
+F 3 "" H 10300 4000 50  0000 C CNN
+	1    10300 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R18
+U 1 1 590C5E1A
+P 9900 4000
+F 0 "R18" H 10050 4050 50  0000 C CNN
+F 1 "Therm" H 10100 3950 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 9830 4000 50  0001 C CNN
+F 3 "" H 9900 4000 50  0000 C CNN
+	1    9900 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 3650 9900 3650
+Wire Wire Line
+	9900 3650 9900 3850
+Wire Wire Line
+	10300 3250 10300 3850
+Connection ~ 10300 3250
+Wire Wire Line
+	9900 4150 9900 4600
+Wire Wire Line
+	10300 4150 10300 4600
+$Comp
+L R R17
+U 1 1 590C6CA4
+P 8100 4300
+F 0 "R17" H 8250 4350 50  0000 C CNN
+F 1 "100k" H 8250 4250 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 8030 4300 50  0001 C CNN
+F 3 "" H 8100 4300 50  0000 C CNN
+	1    8100 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R16
+U 1 1 590C6D45
+P 7800 4300
+F 0 "R16" H 7950 4350 50  0000 C CNN
+F 1 "1k" H 7950 4250 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 7730 4300 50  0001 C CNN
+F 3 "" H 7800 4300 50  0000 C CNN
+	1    7800 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 1850 9550 2750
+Wire Wire Line
+	7800 4600 7800 4450
+Wire Wire Line
+	8100 4450 8100 4600
+Wire Wire Line
+	8200 4050 8100 4050
+Wire Wire Line
+	8100 4050 8100 4150
+Wire Wire Line
+	8200 3950 7800 3950
+Wire Wire Line
+	7800 3950 7800 4150
+$Comp
+L R R15
+U 1 1 590C7CE3
+P 7450 4300
+F 0 "R15" H 7600 4350 50  0000 C CNN
+F 1 "100k" H 7600 4250 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 7380 4300 50  0001 C CNN
+F 3 "" H 7450 4300 50  0000 C CNN
+	1    7450 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R14
+U 1 1 590C7D36
+P 7450 2600
+F 0 "R14" H 7600 2650 50  0000 C CNN
+F 1 "270k" H 7600 2550 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 7380 2600 50  0001 C CNN
+F 3 "" H 7450 2600 50  0000 C CNN
+	1    7450 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 2850 7450 2850
+Wire Wire Line
+	7450 2750 7450 4150
+Connection ~ 7450 2850
+Wire Wire Line
+	7450 4600 7450 4450
+$Comp
+L R R13
+U 1 1 590C8118
+P 7150 2600
+F 0 "R13" H 7300 2650 50  0000 C CNN
+F 1 "R" V 7150 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 7080 2600 50  0001 C CNN
+F 3 "" H 7150 2600 50  0000 C CNN
+	1    7150 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R12
+U 1 1 590C816F
+P 6800 2600
+F 0 "R12" H 6950 2650 50  0000 C CNN
+F 1 "R" V 6800 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 6730 2600 50  0001 C CNN
+F 3 "" H 6800 2600 50  0000 C CNN
+	1    6800 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 3150 7150 3150
+Wire Wire Line
+	7150 3150 7150 2750
+Wire Wire Line
+	6800 3250 8200 3250
+Wire Wire Line
+	6800 3250 6800 2750
+$Comp
+L L L1
+U 1 1 590E217C
+P 1700 3150
+F 0 "L1" H 1700 3250 50  0000 C CNN
+F 1 "6.8µ / 2A" H 1700 3100 50  0000 C CNN
+F 2 "Inductors:SELF-WE-PD-XXL" H 1700 3150 50  0001 C CNN
+F 3 "" H 1700 3150 50  0001 C CNN
+	1    1700 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10700 4150 10700 4600
+Connection ~ 10700 3250
+$Comp
+L CONN_01X08 J4
+U 1 1 591178E6
+P 5500 6600
+F 0 "J4" H 5500 7050 50  0001 C CNN
+F 1 "CONN_01X08" V 5600 6600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08" H 5500 6600 50  0001 C CNN
+F 3 "" H 5500 6600 50  0001 C CNN
+	1    5500 6600
+	1    0    0    -1  
+$EndComp
+Text HLabel 4750 6950 0    60   Input ~ 0
+5V
+Text HLabel 4750 6850 0    60   Input ~ 0
+GND
+Text HLabel 4750 6550 0    60   Input ~ 0
+EN
+Text HLabel 4750 6750 0    60   Input ~ 0
+LBO
+Text HLabel 4750 6450 0    60   Input ~ 0
+VLiPo
+Text HLabel 2450 2450 1    60   Input ~ 0
+VBat
+Text HLabel 4750 6250 0    60   Input ~ 0
+VBus
+Wire Wire Line
+	4800 4100 4800 2900
+Connection ~ 4800 2900
+Wire Wire Line
+	3600 3650 3500 3650
+Connection ~ 8100 2650
+Wire Wire Line
+	7450 1850 7450 2450
+Wire Wire Line
+	10700 1850 10700 3850
+Wire Wire Line
+	7800 1850 7800 3450
+Connection ~ 8100 3450
+Wire Wire Line
+	6450 2500 6450 1850
+$Comp
+L C C9
+U 1 1 59122443
+P 6450 2650
+F 0 "C9" H 6475 2750 50  0000 L CNN
+F 1 "10µ" H 6475 2550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 6488 2500 50  0001 C CNN
+F 3 "" H 6450 2650 50  0000 C CNN
+	1    6450 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 2800 6450 4600
+Wire Wire Line
+	1100 3150 1550 3150
+Wire Wire Line
+	1850 3150 2550 3150
+Text HLabel 1100 2450 1    60   Input ~ 0
+VBat
+Text HLabel 4750 6350 0    60   Input ~ 0
+VBat
+Text HLabel 5200 2450 1    60   Input ~ 0
+5V
+Text HLabel 1100 4600 3    60   UnSpc ~ 0
+GND
+Text HLabel 3600 3650 2    60   Input ~ 0
+LBO
+Text HLabel 6800 1850 1    60   Input ~ 0
+VBus
+Text HLabel 7150 1850 1    60   Input ~ 0
+VBus
+Text HLabel 7450 1850 1    60   Input ~ 0
+VBus
+Text HLabel 7800 1850 1    60   Input ~ 0
+VBus
+Text HLabel 8100 1850 1    60   Input ~ 0
+VBus
+Text HLabel 6450 1850 1    60   Input ~ 0
+VBus
+Text HLabel 10700 1850 1    60   Input ~ 0
+VLiPo
+Text HLabel 9550 1850 1    60   Input ~ 0
+VBat
+Wire Wire Line
+	4750 6950 5300 6950
+Wire Wire Line
+	5300 6850 4750 6850
+Wire Wire Line
+	4750 6750 5300 6750
+Wire Wire Line
+	5300 6650 5100 6650
+Wire Wire Line
+	5100 6650 5100 6850
+Connection ~ 5100 6850
+Wire Wire Line
+	4750 6550 5300 6550
+Wire Wire Line
+	4750 6250 5300 6250
+Wire Wire Line
+	4750 6350 4950 6350
+Wire Wire Line
+	4950 6350 4950 6400
+Wire Wire Line
+	4750 6450 5050 6450
+Wire Wire Line
+	5050 6450 5050 6350
+Wire Wire Line
+	5050 6350 5300 6350
+Wire Wire Line
+	4950 6400 5150 6400
+Wire Wire Line
+	5150 6400 5150 6450
+Wire Wire Line
+	5150 6450 5300 6450
+Text HLabel 1500 4600 3    60   UnSpc ~ 0
+GND
+Text HLabel 1900 4600 3    60   UnSpc ~ 0
+GND
+Text HLabel 2450 4600 3    60   UnSpc ~ 0
+GND
+Text HLabel 4000 4600 3    60   UnSpc ~ 0
+GND
+Text HLabel 4400 4600 3    60   UnSpc ~ 0
+GND
+Text HLabel 4800 4600 3    60   UnSpc ~ 0
+GND
+Text HLabel 5200 4600 3    60   UnSpc ~ 0
+GND
+Text HLabel 6450 4600 3    60   UnSpc ~ 0
+GND
+Text HLabel 7450 4600 3    60   UnSpc ~ 0
+GND
+Text HLabel 7800 4600 3    60   UnSpc ~ 0
+GND
+Text HLabel 8100 4600 3    60   UnSpc ~ 0
+GND
+Text HLabel 9550 4600 3    60   UnSpc ~ 0
+GND
+Text HLabel 9900 4600 3    60   UnSpc ~ 0
+GND
+Text HLabel 10300 4600 3    60   UnSpc ~ 0
+GND
+Text HLabel 10700 4600 3    60   UnSpc ~ 0
+GND
+$Comp
+L MCP37871 U2
+U 1 1 599A7536
+P 8400 4150
+F 0 "U2" H 8500 5800 60  0000 C CNN
+F 1 "MCP73871" H 8700 4100 60  0000 C CNN
+F 2 "" H 8400 4150 60  0000 C CNN
+F 3 "" H 8400 4150 60  0000 C CNN
+	1    8400 4150
+	1    0    0    -1  
+$EndComp
+Text Notes 7000 6750 0    60   ~ 0
+Adafruit PowerBoost1000C\nhttps://learn.adafruit.com/adafruit-powerboost-1000c-load-share-usb-charge-boost
+$Comp
+L LED D?
+U 1 1 599DEE54
+P 6800 2150
+F 0 "D?" H 6800 2250 50  0000 C CNN
+F 1 "LED" H 6800 2050 50  0000 C CNN
+F 2 "" H 6800 2150 50  0000 C CNN
+F 3 "" H 6800 2150 50  0000 C CNN
+	1    6800 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D?
+U 1 1 599DEEC6
+P 7150 2150
+F 0 "D?" H 7150 2250 50  0000 C CNN
+F 1 "LED" H 7150 2050 50  0000 C CNN
+F 2 "" H 7150 2150 50  0000 C CNN
+F 3 "" H 7150 2150 50  0000 C CNN
+	1    7150 2150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7150 1850 7150 1950
+Wire Wire Line
+	6800 1850 6800 1950
+Wire Wire Line
+	6800 2350 6800 2450
+Wire Wire Line
+	7150 2350 7150 2450
+$Comp
+L LED D?
+U 1 1 599DF573
+P 5200 4250
+F 0 "D?" H 5200 4350 50  0000 C CNN
+F 1 "LED" H 5200 4150 50  0000 C CNN
+F 2 "" H 5200 4250 50  0000 C CNN
+F 3 "" H 5200 4250 50  0000 C CNN
+	1    5200 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 3850 5200 4050
+Wire Wire Line
+	5200 4450 5200 4600
+$Comp
+L Battery BT?
+U 1 1 599DF971
+P 10700 4000
+F 0 "BT?" H 10800 4050 50  0000 L CNN
+F 1 "Battery" H 10800 3950 50  0000 L CNN
+F 2 "" V 10700 4040 50  0000 C CNN
+F 3 "" V 10700 4040 50  0000 C CNN
+	1    10700 4000
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

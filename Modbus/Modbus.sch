@@ -1,0 +1,282 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Modbus-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R2
+U 1 1 590F029D
+P 4300 2850
+F 0 "R2" H 4450 2900 50  0000 C CNN
+F 1 "10k" H 4450 2800 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4230 2850 50  0001 C CNN
+F 3 "" H 4300 2850 50  0001 C CNN
+	1    4300 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 590F0341
+P 3600 4050
+F 0 "R1" V 3500 4050 50  0000 C CNN
+F 1 "10k" V 3700 4050 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 3530 4050 50  0001 C CNN
+F 3 "" H 3600 4050 50  0001 C CNN
+	1    3600 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 590F039F
+P 5900 4000
+F 0 "R3" H 6050 4050 50  0000 C CNN
+F 1 "1k" H 6050 3950 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 5830 4000 50  0001 C CNN
+F 3 "" H 5900 4000 50  0001 C CNN
+	1    5900 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 590F03FC
+P 6100 2850
+F 0 "R4" H 5950 2800 50  0000 C CNN
+F 1 "1k" H 5950 2900 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 6030 2850 50  0001 C CNN
+F 3 "" H 6100 2850 50  0001 C CNN
+	1    6100 2850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4300 3000 4300 3800
+$Comp
+L CONN_01X03 J1
+U 1 1 590F06D3
+P 6950 3450
+F 0 "J1" H 6950 3650 50  0000 C CNN
+F 1 "CONN_01X03" H 6950 3250 50  0000 C CNN
+F 2 "SparkFun-Connectors:SCREWTERMINAL-3.5MM-3" H 6950 3450 50  0001 C CNN
+F 3 "" H 6950 3450 50  0001 C CNN
+	1    6950 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 590F0A8D
+P 8050 4000
+F 0 "C1" H 8075 4100 50  0000 L CNN
+F 1 "100n" H 8075 3900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 8088 3850 50  0001 C CNN
+F 3 "" H 8050 4000 50  0001 C CNN
+	1    8050 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 4150 8050 4650
+Wire Wire Line
+	6100 2200 6100 2700
+Wire Wire Line
+	4300 2200 4300 2700
+Text HLabel 2900 3250 0    60   Input ~ 0
+RxD
+Text HLabel 2900 3550 0    60   Input ~ 0
+TxD
+Wire Wire Line
+	3250 3550 3250 4050
+Connection ~ 3250 3550
+Wire Wire Line
+	5900 4650 5900 4150
+Text HLabel 4300 2200 1    60   UnSpc ~ 0
+Vin
+Text HLabel 5200 2200 1    60   UnSpc ~ 0
+Vin
+Text HLabel 6100 2200 1    60   UnSpc ~ 0
+Vin
+Text HLabel 8050 2200 1    60   UnSpc ~ 0
+Vin
+$Comp
+L BSS123 Q1
+U 1 1 59A12BDD
+P 4200 4000
+F 0 "Q1" H 4400 4075 50  0000 L CNN
+F 1 "BSS123" H 4400 4000 50  0000 L CNN
+F 2 "SOT-23" H 4400 3925 50  0000 L CIN
+F 3 "" H 4200 4000 50  0000 L CNN
+	1    4200 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4050 3750 4050
+Wire Wire Line
+	3250 4050 3450 4050
+$Comp
+L MAX481E U1
+U 1 1 59A12DFA
+P 5200 3350
+F 0 "U1" H 4960 3800 50  0000 C CNN
+F 1 "MAX481E" H 5230 3800 50  0000 L CNN
+F 2 "" H 5200 2650 50  0001 C CNN
+F 3 "" H 5200 3400 50  0001 C CNN
+	1    5200 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2850 5200 2200
+Wire Wire Line
+	5600 3550 6750 3550
+Wire Wire Line
+	6100 3550 6100 3000
+Wire Wire Line
+	5600 3250 6450 3250
+Wire Wire Line
+	5900 3250 5900 3850
+$Comp
+L DB9_Male J2
+U 1 1 59A133F2
+P 7100 2400
+F 0 "J2" H 7100 2950 50  0000 C CNN
+F 1 "DB9_Male" H 7100 1825 50  0000 C CNN
+F 2 "" H 7100 2400 50  0001 C CNN
+F 3 "" H 7100 2400 50  0001 C CNN
+	1    7100 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3450 6650 3450
+Wire Wire Line
+	6650 2000 6650 4650
+Connection ~ 6100 3550
+Wire Wire Line
+	6450 2400 6450 3350
+Wire Wire Line
+	6450 2400 6800 2400
+Connection ~ 5900 3250
+Wire Wire Line
+	6450 3350 6750 3350
+Connection ~ 6450 3250
+Wire Wire Line
+	6550 3550 6550 2600
+Wire Wire Line
+	6550 2600 6800 2600
+Connection ~ 6550 3550
+Wire Wire Line
+	2900 3250 4800 3250
+Wire Wire Line
+	2900 3550 4800 3550
+Wire Wire Line
+	4800 3350 4300 3350
+Connection ~ 4300 3350
+Wire Wire Line
+	4800 3450 4300 3450
+Connection ~ 4300 3450
+$Comp
+L GND #PWR01
+U 1 1 59A13861
+P 4300 4650
+F 0 "#PWR01" H 4300 4400 50  0001 C CNN
+F 1 "GND" H 4300 4500 50  0000 C CNN
+F 2 "" H 4300 4650 50  0001 C CNN
+F 3 "" H 4300 4650 50  0001 C CNN
+	1    4300 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 59A138A0
+P 5200 4650
+F 0 "#PWR02" H 5200 4400 50  0001 C CNN
+F 1 "GND" H 5200 4500 50  0000 C CNN
+F 2 "" H 5200 4650 50  0001 C CNN
+F 3 "" H 5200 4650 50  0001 C CNN
+	1    5200 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 59A138C6
+P 5900 4650
+F 0 "#PWR03" H 5900 4400 50  0001 C CNN
+F 1 "GND" H 5900 4500 50  0000 C CNN
+F 2 "" H 5900 4650 50  0001 C CNN
+F 3 "" H 5900 4650 50  0001 C CNN
+	1    5900 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 59A138EC
+P 6650 4650
+F 0 "#PWR04" H 6650 4400 50  0001 C CNN
+F 1 "GND" H 6650 4500 50  0000 C CNN
+F 2 "" H 6650 4650 50  0001 C CNN
+F 3 "" H 6650 4650 50  0001 C CNN
+	1    6650 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 59A13912
+P 8050 4650
+F 0 "#PWR05" H 8050 4400 50  0001 C CNN
+F 1 "GND" H 8050 4500 50  0000 C CNN
+F 2 "" H 8050 4650 50  0001 C CNN
+F 3 "" H 8050 4650 50  0001 C CNN
+	1    8050 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 2000 6800 2000
+Connection ~ 6650 3450
+NoConn ~ 6800 2800
+NoConn ~ 6800 2700
+NoConn ~ 6800 2500
+NoConn ~ 6800 2300
+NoConn ~ 6800 2200
+NoConn ~ 6800 2100
+Wire Wire Line
+	4300 4650 4300 4200
+Wire Wire Line
+	5200 3950 5200 4650
+Wire Wire Line
+	8050 3850 8050 2200
+$EndSCHEMATC

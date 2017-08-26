@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BSS123
+D N-Channel MOSFET, SOT-23
+K N-Channel MOSFET Logic Level
+F http://www.farnell.com/datasheets/2288251.pdf?_ga=2.253881992.1287538987.1503668152-1912333633.1503065184
+$ENDCMP
+#
+#End Doc Library
