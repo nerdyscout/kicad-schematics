@@ -1,4 +1,4 @@
-update=Sat 26 Aug 2017 08:05:36 CEST
+update=Sun 27 Aug 2017 00:34:28 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=../../kicad-library/library
@@ -57,5 +59,4 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-[general]
-version=1
+LibName31=graphic_symbols

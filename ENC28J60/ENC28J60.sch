@@ -28,6 +28,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:graphic_symbols
+LIBS:ENC28J60-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -757,4 +759,19 @@ Wire Wire Line
 	6300 3500 6300 3200
 Wire Wire Line
 	6300 3200 5400 3200
+Text Notes 7050 7050 0    79   ~ 0
+Released under the Creative Commons\nAttribution-ShareAlike 4.0 International (CC BY-SA 4.0) \nhttps://creativecommons.org/licenses/by-sa/4.0/
+$Comp
+L Logo_Open_Hardware_Small #LOGO?
+U 1 1 59A1FAC2
+P 10850 6850
+F 0 "#LOGO?" H 10850 7125 50  0001 C CNN
+F 1 "open hardware" H 10850 6625 50  0000 C CNN
+F 2 "" H 10850 6850 50  0001 C CNN
+F 3 "" H 10850 6850 50  0001 C CNN
+	1    10850 6850
+	1    0    0    -1  
+$EndComp
+Text Notes 7400 7500 0    59   ~ 0
+Ethernet SPI Module
 $EndSCHEMATC

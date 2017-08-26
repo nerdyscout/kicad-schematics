@@ -28,6 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:graphic_symbols
 LIBS:Modbus-cache
 EELAYER 25 0
 EELAYER END
@@ -140,7 +141,7 @@ U 1 1 59A12BDD
 P 4200 4000
 F 0 "Q1" H 4400 4075 50  0000 L CNN
 F 1 "BSS123" H 4400 4000 50  0000 L CNN
-F 2 "SOT-23" H 4400 3925 50  0000 L CIN
+F 2 "SOT-23" H 4400 3925 50  0001 L CIN
 F 3 "" H 4200 4000 50  0000 L CNN
 	1    4200 4000
 	1    0    0    -1  
@@ -279,4 +280,19 @@ Wire Wire Line
 	5200 3950 5200 4650
 Wire Wire Line
 	8050 3850 8050 2200
+Text Notes 7050 7050 0    79   ~ 0
+Released under the Creative Commons\nAttribution-ShareAlike 4.0 International (CC BY-SA 4.0) \nhttps://creativecommons.org/licenses/by-sa/4.0/
+$Comp
+L Logo_Open_Hardware_Small #LOGO?
+U 1 1 59A1FA02
+P 10900 6850
+F 0 "#LOGO?" H 10900 7125 50  0001 C CNN
+F 1 "open hardware" H 10900 6625 50  0000 C CNN
+F 2 "" H 10900 6850 50  0001 C CNN
+F 3 "" H 10900 6850 50  0001 C CNN
+	1    10900 6850
+	1    0    0    -1  
+$EndComp
+Text Notes 7400 7500 0    59   ~ 0
+Serial erial to Modbus
 $EndSCHEMATC

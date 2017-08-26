@@ -29,6 +29,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:graphic_symbols
 LIBS:CANBus-cache
 EELAYER 25 0
 EELAYER END
@@ -245,7 +246,7 @@ Wire Wire Line
 	3200 5150 3200 5350
 Wire Wire Line
 	8500 2400 8750 2400
-Text Notes 7100 6700 0    60   ~ 0
+Text Notes 7400 7500 0    60   ~ 0
 Canbus Transceiver compatible to Raspberry 3V  
 Wire Wire Line
 	8750 2300 8200 2300
@@ -319,7 +320,7 @@ U 1 1 594041DB
 P 8200 1750
 F 0 "JP1" V 8250 1600 50  0000 C CNN
 F 1 "JUMPER" V 8150 1550 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" V 8050 950 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" V 8050 950 50  0001 C CNN
 F 3 "" H 8200 1750 50  0000 C CNN
 	1    8200 1750
 	0    -1   -1   0   
@@ -469,6 +470,19 @@ F 1 "MCP2551-I/SN" H 7200 4000 50  0000 L CNN
 F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 7100 3150 50  0001 C CIN
 F 3 "" H 7100 3650 50  0001 C CNN
 	1    7100 3650
+	1    0    0    -1  
+$EndComp
+Text Notes 7100 7000 0    79   ~ 0
+Released under the Creative Commons\nAttribution-ShareAlike 4.0 International (CC BY-SA 4.0) \nhttps://creativecommons.org/licenses/by-sa/4.0/
+$Comp
+L Logo_Open_Hardware_Small #LOGO?
+U 1 1 59A1F946
+P 10900 6850
+F 0 "#LOGO?" H 10900 7125 50  0001 C CNN
+F 1 "open hardware" H 10900 6625 50  0000 C CNN
+F 2 "" H 10900 6850 50  0001 C CNN
+F 3 "" H 10900 6850 50  0001 C CNN
+	1    10900 6850
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
