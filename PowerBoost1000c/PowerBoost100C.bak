@@ -28,6 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:graphic_symbols
 LIBS:PowerBoost100C-cache
 EELAYER 25 0
 EELAYER END
@@ -50,7 +51,7 @@ P 2750 4050
 F 0 "U4" H 2850 5100 60  0000 C CNN
 F 1 "TPS61090RSAR" H 3150 4000 60  0000 C CNN
 F 2 "Housings_DFN_QFN:QFN-16-1EP_4x4mm_Pitch0.65mm" H 2750 4050 60  0001 C CNN
-F 3 "www.ti.com/lit/ds/symlink/tps61090.pdf" H 2750 4050 60  0000 C CNN
+F 3 "www.ti.com/lit/ds/symlink/tps61090.pdf" H 2750 4050 60  0001 C CNN
 	1    2750 4050
 	1    0    0    -1  
 $EndComp
@@ -392,15 +393,13 @@ $Comp
 L L L1
 U 1 1 590E217C
 P 1700 3150
-F 0 "L1" H 1700 3250 50  0000 C CNN
-F 1 "6.8µ / 2A" H 1700 3100 50  0000 C CNN
+F 0 "L1" V 1900 3150 50  0000 C CNN
+F 1 "6.8µ / 2A" V 1800 3150 50  0000 C CNN
 F 2 "Inductors:SELF-WE-PD-XXL" H 1700 3150 50  0001 C CNN
 F 3 "" H 1700 3150 50  0001 C CNN
 	1    1700 3150
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	10700 4150 10700 4600
 Connection ~ 10700 3250
 $Comp
 L CONN_01X08 J4
@@ -436,8 +435,6 @@ Connection ~ 8100 2650
 Wire Wire Line
 	7450 1850 7450 2450
 Wire Wire Line
-	10700 1850 10700 3850
-Wire Wire Line
 	7800 1850 7800 3450
 Connection ~ 8100 3450
 Wire Wire Line
@@ -465,8 +462,6 @@ Text HLabel 4750 6350 0    60   Input ~ 0
 VBat
 Text HLabel 5200 2450 1    60   Input ~ 0
 5V
-Text HLabel 1100 4600 3    60   UnSpc ~ 0
-GND
 Text HLabel 3600 3650 2    60   Input ~ 0
 LBO
 Text HLabel 6800 1850 1    60   Input ~ 0
@@ -516,36 +511,6 @@ Wire Wire Line
 	5150 6400 5150 6450
 Wire Wire Line
 	5150 6450 5300 6450
-Text HLabel 1500 4600 3    60   UnSpc ~ 0
-GND
-Text HLabel 1900 4600 3    60   UnSpc ~ 0
-GND
-Text HLabel 2450 4600 3    60   UnSpc ~ 0
-GND
-Text HLabel 4000 4600 3    60   UnSpc ~ 0
-GND
-Text HLabel 4400 4600 3    60   UnSpc ~ 0
-GND
-Text HLabel 4800 4600 3    60   UnSpc ~ 0
-GND
-Text HLabel 5200 4600 3    60   UnSpc ~ 0
-GND
-Text HLabel 6450 4600 3    60   UnSpc ~ 0
-GND
-Text HLabel 7450 4600 3    60   UnSpc ~ 0
-GND
-Text HLabel 7800 4600 3    60   UnSpc ~ 0
-GND
-Text HLabel 8100 4600 3    60   UnSpc ~ 0
-GND
-Text HLabel 9550 4600 3    60   UnSpc ~ 0
-GND
-Text HLabel 9900 4600 3    60   UnSpc ~ 0
-GND
-Text HLabel 10300 4600 3    60   UnSpc ~ 0
-GND
-Text HLabel 10700 4600 3    60   UnSpc ~ 0
-GND
 $Comp
 L MCP37871 U2
 U 1 1 599A7536
@@ -557,8 +522,8 @@ F 3 "" H 8400 4150 60  0000 C CNN
 	1    8400 4150
 	1    0    0    -1  
 $EndComp
-Text Notes 7000 6750 0    60   ~ 0
-Adafruit PowerBoost1000C\nhttps://learn.adafruit.com/adafruit-powerboost-1000c-load-share-usb-charge-boost
+Text Notes 7050 7000 0    79   ~ 0
+Released under the Creative Commons\nAttribution-ShareAlike 4.0 International (CC BY-SA 4.0) \nhttps://creativecommons.org/licenses/by-sa/4.0/
 $Comp
 L LED D?
 U 1 1 599DEE54
@@ -582,28 +547,28 @@ F 3 "" H 7150 2150 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7150 1850 7150 1950
+	7150 1850 7150 2000
 Wire Wire Line
-	6800 1850 6800 1950
+	6800 1850 6800 2000
 Wire Wire Line
-	6800 2350 6800 2450
+	6800 2300 6800 2450
 Wire Wire Line
-	7150 2350 7150 2450
+	7150 2300 7150 2450
 $Comp
 L LED D?
 U 1 1 599DF573
 P 5200 4250
-F 0 "D?" H 5200 4350 50  0000 C CNN
-F 1 "LED" H 5200 4150 50  0000 C CNN
+F 0 "D?" V 5250 4100 50  0000 C CNN
+F 1 "LED" V 5150 4100 50  0000 C CNN
 F 2 "" H 5200 4250 50  0000 C CNN
 F 3 "" H 5200 4250 50  0000 C CNN
 	1    5200 4250
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5200 3850 5200 4050
+	5200 3850 5200 4100
 Wire Wire Line
-	5200 4450 5200 4600
+	5200 4400 5200 4600
 $Comp
 L Battery BT?
 U 1 1 599DF971
@@ -613,6 +578,197 @@ F 1 "Battery" H 10800 3950 50  0000 L CNN
 F 2 "" V 10700 4040 50  0000 C CNN
 F 3 "" V 10700 4040 50  0000 C CNN
 	1    10700 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59A2033F
+P 1500 4600
+F 0 "#PWR?" H 1500 4350 50  0001 C CNN
+F 1 "GND" H 1500 4450 50  0000 C CNN
+F 2 "" H 1500 4600 50  0001 C CNN
+F 3 "" H 1500 4600 50  0001 C CNN
+	1    1500 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59A204E1
+P 1100 4600
+F 0 "#PWR?" H 1100 4350 50  0001 C CNN
+F 1 "GND" H 1100 4450 50  0000 C CNN
+F 2 "" H 1100 4600 50  0001 C CNN
+F 3 "" H 1100 4600 50  0001 C CNN
+	1    1100 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59A20537
+P 1900 4600
+F 0 "#PWR?" H 1900 4350 50  0001 C CNN
+F 1 "GND" H 1900 4450 50  0000 C CNN
+F 2 "" H 1900 4600 50  0001 C CNN
+F 3 "" H 1900 4600 50  0001 C CNN
+	1    1900 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59A2058D
+P 2450 4600
+F 0 "#PWR?" H 2450 4350 50  0001 C CNN
+F 1 "GND" H 2450 4450 50  0000 C CNN
+F 2 "" H 2450 4600 50  0001 C CNN
+F 3 "" H 2450 4600 50  0001 C CNN
+	1    2450 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59A205E3
+P 4000 4600
+F 0 "#PWR?" H 4000 4350 50  0001 C CNN
+F 1 "GND" H 4000 4450 50  0000 C CNN
+F 2 "" H 4000 4600 50  0001 C CNN
+F 3 "" H 4000 4600 50  0001 C CNN
+	1    4000 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59A206CF
+P 4400 4600
+F 0 "#PWR?" H 4400 4350 50  0001 C CNN
+F 1 "GND" H 4400 4450 50  0000 C CNN
+F 2 "" H 4400 4600 50  0001 C CNN
+F 3 "" H 4400 4600 50  0001 C CNN
+	1    4400 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59A20725
+P 4800 4600
+F 0 "#PWR?" H 4800 4350 50  0001 C CNN
+F 1 "GND" H 4800 4450 50  0000 C CNN
+F 2 "" H 4800 4600 50  0001 C CNN
+F 3 "" H 4800 4600 50  0001 C CNN
+	1    4800 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59A2077B
+P 5200 4600
+F 0 "#PWR?" H 5200 4350 50  0001 C CNN
+F 1 "GND" H 5200 4450 50  0000 C CNN
+F 2 "" H 5200 4600 50  0001 C CNN
+F 3 "" H 5200 4600 50  0001 C CNN
+	1    5200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59A20A3A
+P 6450 4600
+F 0 "#PWR?" H 6450 4350 50  0001 C CNN
+F 1 "GND" H 6450 4450 50  0000 C CNN
+F 2 "" H 6450 4600 50  0001 C CNN
+F 3 "" H 6450 4600 50  0001 C CNN
+	1    6450 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59A20A90
+P 7450 4600
+F 0 "#PWR?" H 7450 4350 50  0001 C CNN
+F 1 "GND" H 7450 4450 50  0000 C CNN
+F 2 "" H 7450 4600 50  0001 C CNN
+F 3 "" H 7450 4600 50  0001 C CNN
+	1    7450 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59A20B95
+P 7800 4600
+F 0 "#PWR?" H 7800 4350 50  0001 C CNN
+F 1 "GND" H 7800 4450 50  0000 C CNN
+F 2 "" H 7800 4600 50  0001 C CNN
+F 3 "" H 7800 4600 50  0001 C CNN
+	1    7800 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59A20BEB
+P 8100 4600
+F 0 "#PWR?" H 8100 4350 50  0001 C CNN
+F 1 "GND" H 8100 4450 50  0000 C CNN
+F 2 "" H 8100 4600 50  0001 C CNN
+F 3 "" H 8100 4600 50  0001 C CNN
+	1    8100 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59A20C41
+P 9550 4600
+F 0 "#PWR?" H 9550 4350 50  0001 C CNN
+F 1 "GND" H 9550 4450 50  0000 C CNN
+F 2 "" H 9550 4600 50  0001 C CNN
+F 3 "" H 9550 4600 50  0001 C CNN
+	1    9550 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59A20C97
+P 9900 4600
+F 0 "#PWR?" H 9900 4350 50  0001 C CNN
+F 1 "GND" H 9900 4450 50  0000 C CNN
+F 2 "" H 9900 4600 50  0001 C CNN
+F 3 "" H 9900 4600 50  0001 C CNN
+	1    9900 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59A20D83
+P 10300 4600
+F 0 "#PWR?" H 10300 4350 50  0001 C CNN
+F 1 "GND" H 10300 4450 50  0000 C CNN
+F 2 "" H 10300 4600 50  0001 C CNN
+F 3 "" H 10300 4600 50  0001 C CNN
+	1    10300 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59A20DD9
+P 10700 4600
+F 0 "#PWR?" H 10700 4350 50  0001 C CNN
+F 1 "GND" H 10700 4450 50  0000 C CNN
+F 2 "" H 10700 4600 50  0001 C CNN
+F 3 "" H 10700 4600 50  0001 C CNN
+	1    10700 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 4200 10700 4600
+Wire Wire Line
+	10700 3800 10700 1850
+$Comp
+L Logo_Open_Hardware_Small #LOGO?
+U 1 1 59A21789
+P 10900 6850
+F 0 "#LOGO?" H 10900 7125 50  0001 C CNN
+F 1 "open hardware" H 10900 6625 50  0000 C CNN
+F 2 "" H 10900 6850 50  0001 C CNN
+F 3 "" H 10900 6850 50  0001 C CNN
+	1    10900 6850
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-update=Sun 27 Aug 2017 00:44:41 CEST
+update=Mon 28 Aug 2017 20:48:31 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=graphic_symbols
+LibName31=battery_management
