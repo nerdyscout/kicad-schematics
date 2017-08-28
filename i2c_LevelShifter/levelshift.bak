@@ -28,6 +28,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:graphic_symbols
+LIBS:levelshift-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -178,4 +180,19 @@ Text HLabel 3850 3550 0    60   Input ~ 0
 SDA_3V
 Text HLabel 3850 3750 0    60   Input ~ 0
 CLK_3V
+Text Notes 7350 7500 0    60   ~ 0
+I2C Level Shifter 3V <-> 5V
+Text Notes 7050 7000 0    79   ~ 0
+Released under the Creative Commons\nAttribution-ShareAlike 4.0 International (CC BY-SA 4.0) \nhttps://creativecommons.org/licenses/by-sa/4.0/
+$Comp
+L Logo_Open_Hardware_Small #LOGO?
+U 1 1 59A1F889
+P 10900 6850
+F 0 "#LOGO?" H 10900 7125 50  0001 C CNN
+F 1 "open hardware" H 10900 6625 50  0000 C CNN
+F 2 "" H 10900 6850 50  0001 C CNN
+F 3 "" H 10900 6850 50  0001 C CNN
+	1    10900 6850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
